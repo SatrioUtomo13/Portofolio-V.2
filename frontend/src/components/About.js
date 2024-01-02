@@ -4,7 +4,7 @@ import ProfileRectangle from '../assets/img/profile-rectangle.jpg'
 
 function About() {
   return (
-    <div className='w-full h-fit font-poppins text-white'>
+    <div className='w-full h-fit font-poppins text-white mb-24'>
       <div className='flex flex-col items-center space-y-5'>
         <span className='text-text text-sm lg:text-base'>Get to know me</span>
         <span className='text-4xl font-bold lg:text-5xl'>About Me</span>
