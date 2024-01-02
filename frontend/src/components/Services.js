@@ -8,7 +8,7 @@ function Services() {
       <h2 className='text-4xl font-bold'>My Services</h2>
     </div>
 
-    <div className='font-poppins mx-5 grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-10 md:mx-10 lg:mx-20 lg:grid-cols-3'>
+    <div className='font-poppins mx-5 mb-24 grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-10 md:mx-10 lg:mx-20 lg:grid-cols-3'>
       <div className='w-full h-fit text-white box-border bg-secondary space-y-5 px-10 py-9 hover:border-b-2 border-greenText transition-all duration-150 min-h-[300px]'>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-14 h-14 stroke-greenText">
           <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z" />

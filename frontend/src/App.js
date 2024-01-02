@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar.js"
 import Hero from "./components/Hero.js"
 import About from "./components/About.js"
 import Services from "./components/Services.js"
+import Contacts from "./components/Contacts.js"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Hero/>
       <About/>
       <Services/>
+      <Contacts/>
     </div>
   );
 }
