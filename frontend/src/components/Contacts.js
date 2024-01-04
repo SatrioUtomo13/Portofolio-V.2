@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contacts() {
   return (
-    <div className='w-full h-fit font-poppins text-white'>
+    <div className='w-full h-fit font-poppins text-white mb-10'>
         <div className='flex flex-col items-center space-y-5'>
             <span className='text-text text-sm lg:text-base'>Feel free to contact me anytimes</span>
             <span className='text-4xl font-bold lg:text-5xl'>Get in Touch</span>
