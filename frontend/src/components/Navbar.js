@@ -24,10 +24,10 @@ function Navbar() {
   })
 
   return (
-    <nav className={`text-white text-2xl py-8 px-12 flex justify-between sticky top-0 md:py-6 md:px-20 transition-all duration-100 ${scrollPosition > 20 ? 'bg-secondary' : 'bg-transparent'}`}>
+    <nav className={`text-white z-10 text-2xl py-8 px-12 flex justify-between sticky top-0 md:py-6 md:px-20 transition-all duration-100 ${scrollPosition > 20 ? 'bg-secondary' : 'bg-transparent'}`}>
         <a href='#' className='font-rubik md:text-4xl'>Satrio</a>
 
-        <ul className='hidden text-lg font-poppins text-gray-200 w-1/2 justify-between items-center md:flex lg:w-2/5'>
+        <ul className={`text-base font-poppins text-gray-200 p-3 pr-20 flex flex-col space-y-3 fixed bg-secondary right-14 top-16 ${isMenuOpen ? '' : 'hidden'} md:flex md:static md:flex-row md:justify-between md:text-lg md:w-1/2 md:items-center md:bg-transparent md:space-y-0 md:pr-0 md:pl-0 `}>
           <li className='hover:text-white cursor-pointer'>
             <a href='#'>About</a>
           </li>
@@ -38,18 +38,6 @@ function Navbar() {
             <a href='#'>Contacts</a>
           </li>
         </ul>
-
-        <ul className={`text-base font-poppins text-gray-200 p-3 pr-20 flex flex-col space-y-3 fixed bg-secondary right-14 top-14 ${isMenuOpen ? '' : 'hidden'}`}>
-          <li className='hover:text-white cursor-pointer'>
-            <a href='#'>About</a>
-          </li>
-          <li className='hover:text-white cursor-pointer'>
-            <a href='#'>Services</a>
-          </li>
-          <li className='hover:text-white cursor-pointer'>
-            <a href='#'>Contacts</a>
-          </li>
-        </ul> 
 
         <button className='md:hidden' onClick={ToggleMenu}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-9 h-w-9">
