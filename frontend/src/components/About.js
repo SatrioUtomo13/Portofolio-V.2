@@ -1,13 +1,29 @@
 import React from 'react'
 import ProfileSquare from '../assets/img/profile-square.png'
 import ProfileRectangle from '../assets/img/profile-rectangle.jpg'
+import { motion } from 'framer-motion';
 
 function About() {
   return (
     <div className='w-full h-fit font-poppins text-white mb-24'>
       <div className='flex flex-col items-center space-y-5'>
-        <span className='text-text text-sm lg:text-base'>Get to know me</span>
-        <span className='text-4xl font-bold lg:text-5xl'>About Me</span>
+        <motion.span
+        initial={{ scale:0, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{ 
+          duration: 0.8
+        }}
+        viewport={{ once: true }}
+        className='text-text text-sm lg:text-base'>Get to know me</motion.span>
+        <motion.span
+        initial={{ scale: 0, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{ 
+          duration: 0.8,
+          delay: 0.2
+        }}
+        viewport={{ once: true }}
+        className='text-4xl font-bold lg:text-5xl'>About Me</motion.span>
       </div>
       <div className='mt-20 flex flex-col items-center lg:flex-row box-border lg:items-start lg:px-20'>
         <img src={ProfileSquare} alt='profile' className='w-44 h-44 rounded-full md:w-64 md:h-64 lg:hidden'/>
@@ -27,7 +43,7 @@ function About() {
                     <p className='text-sm mb-5'>From: <span className='ml-3 text-text'>Tangerang, Indonesia</span></p>
                 </div>
             </div>
-            <button className='bg-greenText px-10 py-3 mt-11 rounded-full'>Download CV</button>
+            <button className='bg-greenText px-10 py-3 mt-11 rounded-full hover:scale-105 transition-all'>Download CV</button>
         </div>
       </div>
     </div>
