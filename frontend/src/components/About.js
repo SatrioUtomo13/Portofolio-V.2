@@ -1,6 +1,7 @@
 import React from 'react'
 import ProfileSquare from '../assets/img/profile-square.png'
 import ProfileRectangle from '../assets/img/profile-rectangle.jpg'
+import MyCv from '../assets/myCV.pdf'
 import { motion } from 'framer-motion';
 
 function About() {
@@ -36,14 +37,14 @@ function About() {
             <div className='space-y-3 md:flex md:space-y-0 md:w-3/4 md:justify-between md:py-5 lg:w-full'>
                 <div className='space-y-3'>
                     <p className='text-sm'>Name: <span className='ml-3 text-text'>Satrio Utomo</span></p>
-                    <p className='text-sm'>Email: <a href='#' className='ml-3 text-greenText'>satrio.utomo130799@gmail.com</a></p>
+                    <p className='text-sm'>Email: <a href='mailto:satrio.utomo130799@gmail.com' className='ml-3 text-greenText'>satrio.utomo130799@gmail.com</a></p>
                 </div>
                 <div className='space-y-3'>
                     <p className='text-sm'>Age: <span className='ml-3 text-text'>24</span></p>
                     <p className='text-sm mb-5'>From: <span className='ml-3 text-text'>Tangerang, Indonesia</span></p>
                 </div>
             </div>
-            <button className='bg-greenText px-10 py-3 mt-11 rounded-full hover:scale-105 transition-all'>Download CV</button>
+            <a href={MyCv} download='CV - SATRIO UTOMO' className='bg-greenText px-10 py-3 mt-11 rounded-full hover:scale-105 transition-all'>Download CV</a>
         </div>
       </div>
     </div>
