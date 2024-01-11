@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 function About() {
   return (
-    <div className='w-full h-fit font-poppins text-white mb-24'>
+    <div className='w-full h-fit font-poppins text-white mb-24' id='about'>
       <div className='flex flex-col items-center space-y-5'>
         <motion.span
         initial={{ scale:0, opacity: 0 }}

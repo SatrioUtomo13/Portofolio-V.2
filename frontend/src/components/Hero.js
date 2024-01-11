@@ -3,8 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 function Hero() {
   return (
-    <>
-    <div className='w-full h-screen font-poppins flex flex-col justify-center items-center text-white -mt-24'>
+    <div className='w-full h-screen font-poppins flex flex-col justify-center items-center text-white -mt-24' id='hero'>
       <span className='font-bold text-5xl md:text-7xl'>Satrio Utomo</span>
         <div className='text-xs mt-8 font-medium md:text-sm'>
             <TypeAnimation
@@ -24,7 +23,6 @@ function Hero() {
             />
         </div>
     </div>
-    </>
   )
 }
 
