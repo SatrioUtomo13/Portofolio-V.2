@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { motion } from 'framer-motion';
 
 
@@ -35,7 +36,14 @@ function Navbar() {
       duration: 2
     }}
     className={`text-white z-10 text-2xl py-8 px-12 flex justify-between sticky top-0 md:py-6 md:px-20 transition-all duration-100 ${scrollPosition > 20 ? 'bg-secondary' : 'bg-transparent'}`}>
-        <a href='#' className='font-rubik md:text-4xl'>Satrio</a>
+        <ScrollLink
+        activeClass="active"
+        to='hero'
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+        className='font-rubik md:text-4xl'>Satrio</ScrollLink>
 
         <ul className={`text-base font-poppins text-gray-200 p-3 pr-20 flex flex-col space-y-3 fixed bg-secondary right-14 top-16 ${isMenuOpen ? '' : 'hidden'} md:flex md:static md:flex-row md:justify-between md:text-lg md:w-1/2 md:items-center md:bg-transparent md:space-y-0 md:pr-0 md:pl-0 `}>
           <motion.li
@@ -47,7 +55,14 @@ function Navbar() {
             duration: 1
           }}
           className='hover:text-white cursor-pointer'>
-            <a href='#'>About</a>
+            <ScrollLink
+            activeClass="active"
+            to='about'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            >About</ScrollLink>
           </motion.li>
           <motion.li
           initial={{ y: -100 }}
@@ -58,7 +73,14 @@ function Navbar() {
             duration: 1
           }}
           className='hover:text-white cursor-pointer'>
-            <a href='#'>Services</a>
+            <ScrollLink 
+            activeClass="active"
+            to='service'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            >Services</ScrollLink>
           </motion.li>
           <motion.li 
           initial={{ y: -100 }}
@@ -69,7 +91,14 @@ function Navbar() {
             duration: 1
           }}
           className='hover:text-white cursor-pointer'>
-            <a href='#'>Contacts</a>
+            <ScrollLink
+            activeClass="active"
+            to='contact'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            >Contacts</ScrollLink>
           </motion.li>
         </ul>
 
