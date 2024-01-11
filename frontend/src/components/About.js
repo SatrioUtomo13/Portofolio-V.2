@@ -21,7 +21,7 @@ function About() {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ 
           duration: 0.8,
-          delay: 0.2
+          delay: 0.2            
         }}
         viewport={{ once: true }}
         className='text-4xl font-bold lg:text-5xl'>About Me</motion.span>
@@ -44,7 +44,9 @@ function About() {
                     <p className='text-sm mb-5'>From: <span className='ml-3 text-text'>Tangerang, Indonesia</span></p>
                 </div>
             </div>
-            <a href={MyCv} download='CV - SATRIO UTOMO' className='bg-greenText px-10 py-3 mt-11 rounded-full hover:scale-105 transition-all'>Download CV</a>
+            <div className='h-fit mt-14'>
+              <a href={MyCv} download='CV - SATRIO UTOMO' className='bg-greenText px-10 py-3 rounded-full '>Download CV</a>
+            </div>
         </div>
       </div>
     </div>
