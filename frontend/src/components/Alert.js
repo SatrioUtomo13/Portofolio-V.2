@@ -11,7 +11,7 @@ function Alert() {
             duration: 1
         }}
         className="absolute -top-14 w-full p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-200 dark:bg-gray-800 dark:text-green-400" role="alert">
-            <span className="font-medium">Success alert!</span> Your Message has been Sent
+            <span className="font-medium">Congratulation !</span> Your Message has been Sent
         </motion.div>
 
     )
